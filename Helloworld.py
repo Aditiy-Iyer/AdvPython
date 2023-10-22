@@ -1,1 +1,1 @@
-print("Hello from the oth    er side. !!!")
+print("Hello from the other side. !!!")
