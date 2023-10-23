@@ -11,7 +11,7 @@ class shape(ABC):
 class circle(shape):
     def __init__(self, radius):
         self.radius = radius
-        print("Radius of the circle:", 4)
+        print("Radius of the circle:", 6)
 
     def area(self):
         circle_area = 3.14*radius**2
