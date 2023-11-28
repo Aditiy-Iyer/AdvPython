@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def login():
-    return redirect('/login')
+    return redirect('/loginpage')
 
 @app.route('/login')
 def server_login():
