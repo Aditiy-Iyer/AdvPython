@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Login page</title>
+    </head>
+    <body>
+        <div class="container">
+        <form action="/login_process" method="post">
+            <label for="username">Enter Username</label>
+            <input name="username" type="text" placeholder="username">
+            <label for="password">Enter Password</label>
+            <input name="password" type="text" placeholder="password" type="password">
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </body>
+    <style>
+        body{
+            justify-content:center;
+            align-items:center;
+            margin: 5em 5em;
+            padding: 5em 5em;
+        }
+
+        form > input{
+            height: 1cm;
+            margin: 1.2cm;
+        }
+
+        form > button {
+            width: 5em;
+            height: 2em;
+        }
+        .container > form{
+            padding: 2.5em 5em;
+            display: flex;
+            flex-direction: column;
+            font-size:larger;
+        }
+    </style>
+</html>

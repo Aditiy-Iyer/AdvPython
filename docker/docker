@@ -1,0 +1,11 @@
+FROM PYTHON:3.12.0
+
+WORKDIR /app
+
+ENV VIRTUAL_ENV=/opt/venv
+RUN python3 -m venv $VIRTUAL_ENV
+ENV PATH="$VIRTUAL_ENV/BIN:$PATH"
+
+RUN python3 -m pip install flask
+COPY app.py .
+ENTRYPOINT FLASK_APP=app flask run --host=0.0.0.0
